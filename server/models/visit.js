@@ -25,11 +25,11 @@ module.exports = (sequelize, DataTypes) => {
     department_id: DataTypes.INTEGER,
     doctor_id: DataTypes.INTEGER,
     status: DataTypes.STRING,
-    notes: DataTypes.TEXT
+    notes: DataTypes.TEXT,
+    updated_by: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Visit',
-    tableName: 'Visits'
   });
   return Visit;
 };

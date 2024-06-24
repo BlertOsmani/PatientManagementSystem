@@ -17,11 +17,10 @@ module.exports = (sequelize, DataTypes) => {
     user_id: DataTypes.INTEGER,
     message: DataTypes.TEXT,
     type: DataTypes.STRING,
-    status: DataTypes.STRING
+    status: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'Notification',
-    tableName: 'Notifications'
   });
   return Notification;
 };

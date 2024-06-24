@@ -17,11 +17,11 @@ module.exports = (sequelize, DataTypes) => {
     invoice_id: DataTypes.INTEGER,
     payment_date: DataTypes.DATE,
     amount: DataTypes.DECIMAL,
-    payment_method: DataTypes.STRING
+    payment_method: DataTypes.STRING,
+    updated_by: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Payment',
-    tableName: 'Payments'
   });
   return Payment;
 };
