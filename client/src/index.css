@@ -38,3 +38,19 @@ button{
   width: 100%;
   transition: 0.2s ease;
 }
+
+.wide-form-field{
+  width: calc(96% + 1rem);
+}
+.small-form-field{
+  width: 48%;
+}
+
+.p-icon-field > .p-input-icon{
+  margin-top: unset !important;
+  transform: translateY(-50%) !important;
+}
+
+.p-dialog-enter-done{
+  transform: scale(1) !important;
+}
