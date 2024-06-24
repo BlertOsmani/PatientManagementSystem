@@ -17,11 +17,11 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     contact_person: DataTypes.STRING,
     contact_number: DataTypes.STRING,
-    address: DataTypes.TEXT
+    address: DataTypes.TEXT,
+    updated_by: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Supplier',
-    tableName: 'Suppliers'
   });
   return Supplier;
 };

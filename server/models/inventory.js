@@ -18,11 +18,11 @@ module.exports = (sequelize, DataTypes) => {
     quantity: DataTypes.INTEGER,
     unit: DataTypes.STRING,
     reorder_level: DataTypes.INTEGER,
-    supplier_id: DataTypes.INTEGER
+    supplier_id: DataTypes.INTEGER,
+    updated_by: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'Inventory',
-    tableName: 'Inventories',
   });
   return Inventory;
 };
